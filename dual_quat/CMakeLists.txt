@@ -17,12 +17,12 @@ include_directories(${EIGEN3_INCLUDE_DIRS})
 include_directories("/usr/local/include/eigen3")
 
 
-include_directories("~/open3d_install/include")
-link_directories("~/open3d_install/lib") 
-link_libraries(Open3D)
+# include_directories("~/open3d_install/include")
+# link_directories("~/open3d_install/lib") 
+# link_libraries(Open3D)
 
 
 
 # add the executable 添加可执行文件
 add_executable(dual_quat usage.cpp)
-target_link_libraries(dual_quat ~/open3d_install/lib/libOpen3D.so)
+# target_link_libraries(dual_quat ~/open3d_install/lib/libOpen3D.so)
